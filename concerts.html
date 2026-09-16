@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concerts &amp; Festivals | Event House</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container"><a class="brand-logo" href="index.html">
+                <div class="brand-icon">EH</div>
+                <div class="brand-text"><span class="word1">Event</span><span class="word2">HOUSE</span></div>
+            </a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active-link" href="concerts.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul><a class="call-btn" href="tel:+918707738345">+91 87077 38345</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="concert-hero" aria-labelledby="concert-title">
+            <img src="service-concerts.jpg" alt="Bartending service at a live concert">
+            <div class="concert-hero-content">
+                <p class="concert-eyebrow">CONCERTS &amp; FESTIVALS</p>
+                <h1 id="concert-title">Concerts &amp; Festivals</h1>
+                <p class="concert-description">When the crowd is thousands and every minute matters, we deploy multi-station bars, fast-pour systems and trained teams that keep the lines moving and the energy higher.</p>
+                <div class="concert-hero-actions">
+                    <a class="hero-btn hero-btn-primary" href="contact.html">Get a Quote <span aria-hidden="true">→</span></a>
+                    <a class="hero-btn hero-btn-secondary" href="https://wa.me/918707738345" target="_blank" rel="noopener">WhatsApp Us</a>
+                </div>
+            </div>
+        </section>
+        <section class="concert-menu" id="menu" aria-labelledby="menu-title">
+            <div class="concert-menu-heading">
+                <p class="concert-eyebrow">TASTING NOTES</p>
+                <h2 id="menu-title">A glimpse of the menu</h2>
+                <p>A considered selection, custom-curated for your event.</p>
+            </div>
+            <div class="concert-menu-grid">
+                <article class="concert-menu-card"><h3>Crowd Favourites</h3><ul><li>Long Island Iced Tea</li><li>Tequila Sunrise</li><li>Whisky Sour Highball</li></ul></article>
+                <article class="concert-menu-card"><h3>Batch Pours</h3><ul><li>Frozen Margarita</li><li>Pre-batched Negroni</li><li>Rum Punch</li></ul></article>
+                <article class="concert-menu-card"><h3>Backstage Premium</h3><ul><li>Single-Malt Old Fashioned</li><li>Champagne Cocktail</li><li>Mezcal Paloma</li></ul></article>
+            </div>
+        </section>
+        <section class="concert-packages" id="packages" aria-labelledby="packages-title">
+            <div class="concert-packages-heading">
+                <p class="concert-eyebrow">PACKAGES</p>
+                <h2 id="packages-title">Built for every scale</h2>
+                <p>Three starting points. Every detail is customisable.</p>
+            </div>
+            <div class="concert-packages-grid">
+                <article class="concert-package"><h3>Essential</h3><p class="package-label">Starting at</p><strong>₹1.2 L</strong><ul><li>2 bar stations, up to 1,000 attendees</li><li>8 staff</li><li>Batched menu with 5 cocktails</li><li>Standard cups and ice</li><li>Single-day operation</li></ul><a href="contact.html" class="package-btn">Enquire</a></article>
+                <article class="concert-package concert-package-featured"><h3>Signature</h3><p class="package-label">Starting at</p><strong>₹3 L</strong><ul><li>4 bar stations, up to 3,000 attendees</li><li>20+ staff</li><li>Batched and à-la-minute menu</li><li>VIP / backstage bar included</li><li>Inventory and POS reporting</li></ul><a href="contact.html" class="package-btn">Enquire</a></article>
+                <article class="concert-package"><h3>Bespoke</h3><p class="package-label">Starting at</p><strong>On request</strong><ul><li>Festival-scale deployment (10K+)</li><li>Multi-day operation</li><li>Brand activation bars</li><li>Full bar crew and management</li><li>Logistics and licensing assistance</li></ul><a href="contact.html" class="package-btn">Enquire</a></article>
+            </div>
+        </section>
+        <section class="concert-faq" id="faq" aria-labelledby="faq-title">
+            <div class="concert-faq-heading"><p class="concert-eyebrow">FAQS</p><h2 id="faq-title">Frequently asked</h2></div>
+            <div class="concert-faq-list">
+                <details><summary>What's your maximum throughput per bar?</summary><p>Each bar can serve approximately 120–150 guests per hour, depending on the menu and service format.</p></details>
+                <details><summary>Can you integrate with our token or POS system?</summary><p>Yes. Our team can coordinate with your existing token, POS, and guest-flow systems.</p></details>
+                <details><summary>Do you assist with liquor licensing?</summary><p>We can guide your team through local licensing requirements and coordinate the necessary documentation.</p></details>
+            </div>
+        </section>
+        <section class="concert-inquiry" id="contact" aria-labelledby="inquiry-title">
+            <div class="concert-inquiry-heading"><p class="concert-eyebrow">LET'S TALK</p><h2 id="inquiry-title">Plan your concert bar</h2><p>Share a few details — we'll respond within hours.</p></div>
+            <form class="concert-form" onsubmit="event.preventDefault(); const fields=[...this.querySelectorAll('input,select,textarea')]; if(fields.every(field=>field.value.trim())) window.open('https://wa.me/918707738345','_blank'); else alert('Please complete all form fields before sending your inquiry.');">
+                <label>Your name<input type="text" name="name" placeholder="Your name" required></label>
+                <label>Email (optional)<input type="email" name="email" placeholder="you@example.com"></label>
+                <label>Phone<input type="tel" name="phone" placeholder="+91 9876543210" required></label>
+                <label>Event type<select name="event"><option>Concert</option><option>Festival</option><option>Brand activation</option></select></label>
+                <label>Event date<input type="date" name="date"></label>
+                <label>Approx guests<input type="number" name="guests" placeholder="120"></label>
+                <label class="form-wide">Tell us more<textarea name="message" placeholder="Venue, schedule, service requirements..."></textarea></label>
+                <button class="inquiry-btn" type="submit">Verify Phone to Send Enquire <span aria-hidden="true">→</span></button>
+                <small>You'll be redirected to WhatsApp to confirm with our team.</small>
+            </form>
+        </section>
+    </main>
+    <footer class="concert-footer">
+        <div><h3>Event<br>HOUSE</h3><p>Blending people. Crafting memories.</p><p>Premium mobile bartending for memorable events.</p><a href="mailto:gunkashyap382@gmail.com">gunkashyap382@gmail.com</a></div>
+        <div><h4>Services</h4><a href="weddings.html">Weddings</a><a href="corporate-events.html">Corporate Events</a><a href="concerts.html">Concerts</a><a href="house-parties.html">House Parties</a></div>
+        <div><h4>Explore</h4><a href="#menu">Menu</a><a href="#packages">Packages</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+        <div><h4>Reach us</h4><a href="tel:+918707738345">+91 8707738345</a><a href="mailto:gunkashyap382@gmail.com">gunkashyap382@gmail.com</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Gomti+Nagar+Lucknow" target="_blank" rel="noopener">Gomti Nagar, Lucknow</a><p>Pan-India service · Based in Lucknow</p></div>
+        <div class="concert-footer-bottom"><span>© 2026 Event House. All rights reserved.</span><span>Drink responsibly. 21+ only.</span></div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<a class="floating-whatsapp" href="https://wa.me/918707738345" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+</body>
+</html>

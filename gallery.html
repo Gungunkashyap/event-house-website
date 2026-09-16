@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gallery | Event House</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .gallery-page{padding:58px 6%;background:#f7f6f3;min-height:70vh}
+        .gallery-heading{text-align:center;margin:0 auto 32px;max-width:680px}
+        .gallery-heading p{margin:0 0 8px;color:#f0784d;letter-spacing:3px;font-size:.72rem;font-weight:600}
+        .gallery-heading h1{margin:0;font:600 clamp(2rem,4vw,3rem)/1.15 Poppins,sans-serif;color:#142433}
+        .gallery-heading span{display:block;margin-top:10px;color:#4f718c;font-size:.9rem}
+        .gallery-grid{max-width:1060px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+        .gallery-card{margin:0;overflow:hidden;background:#fff;border:1px solid #d6e0e6;border-radius:14px;box-shadow:0 5px 14px #1424330d}
+        .gallery-card img{display:block;width:100%;height:220px;object-fit:cover;transition:transform .3s}
+        .gallery-card:hover img{transform:scale(1.04)}
+        .gallery-card figcaption{padding:13px 15px;color:#142433;font:500 .86rem Poppins,sans-serif}
+        @media(max-width:800px){.gallery-page{padding:44px 6%}.gallery-grid{grid-template-columns:repeat(2,1fr);gap:13px}.gallery-card img{height:180px}}
+        @media(max-width:500px){.gallery-grid{grid-template-columns:1fr}.gallery-card img{height:210px}}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="brand-logo" href="index.html"><div class="brand-icon">EH</div><div class="brand-text"><span class="word1">Event</span><span class="word2">HOUSE</span></div></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#galleryNav" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="galleryNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="tel:+918707738345" class="call-btn">+91 87077 38345</a>
+                <a href="contact.html" class="btn-quote">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+    <main class="gallery-page">
+        <div class="gallery-heading"><p>OUR WORK</p><h1>Moments worth remembering</h1><span>A glimpse of the bars, people and experiences we create for every celebration.</span></div>
+        <div class="gallery-grid">
+            <figure class="gallery-card"><img src="hero-image-homepage.webp" alt="Wedding bartending setup"><figcaption>Wedding celebrations</figcaption></figure>
+            <figure class="gallery-card"><img src="coporate-cover.webp" alt="Corporate event bar setup"><figcaption>Corporate events</figcaption></figure>
+            <figure class="gallery-card"><img src="service-concerts.jpg" alt="Concert bar service"><figcaption>Concerts and festivals</figcaption></figure>
+            <figure class="gallery-card"><img src="service-house.jpg" alt="House party bartending"><figcaption>House parties</figcaption></figure>
+            <figure class="gallery-card"><img src="wedding-cover.webp" alt="Wedding cocktail service"><figcaption>Signature cocktail moments</figcaption></figure>
+            <figure class="gallery-card"><img src="wedding-setup.png" alt="Wedding bar setup"><figcaption>Wedding Setup</figcaption></figure>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
