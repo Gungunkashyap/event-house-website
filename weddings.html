@@ -375,25 +375,26 @@
             <p>LET'S TALK</p>
             <h2>Plan your wedding bar</h2><span>Share a few details — we’ll respond within hours.</span>
         </div>
-        <form class="plan-form" onsubmit="event.preventDefault(); const fields=[...this.querySelectorAll('input,select,textarea')]; if(fields.every(field=>field.value.trim())) window.open('https://wa.me/918707738345','_blank'); else alert('Please complete all form fields before sending your inquiry.');">
-            <div class="plan-grid">
-                <div><label>YOUR NAME</label><input placeholder="Your name"></div>
-                <div><label>EMAIL (OPTIONAL)</label><input type="email" placeholder="you@example.com"></div>
-                <div><label>PHONE</label><input value="8707738345"></div>
-                <div><label>EVENT TYPE</label><select>
-                        <option>Wedding</option>
-                        <option>Mehendi</option>
-                        <option>Reception</option>
-                    </select></div>
-                <div><label>EVENT DATE</label><input type="date"></div>
-                <div><label>EVENT LOCATION</label><input placeholder="Lucknow"></div>
-                <div><label>APPROX GUESTS</label><input type="number" placeholder="120"></div>
-                <div><label>EMAIL</label><input value="gunkashyap382@gmail.com"></div><textarea
-                    placeholder="Theme, drink preferences, venue..."></textarea>
-            </div><button type="submit">Verify Phone to Send
-                Inquiry</button>
-            <p class="plan-note">By submitting, you'll be redirected to WhatsApp to confirm with our team.</p>
-        </form>
+<form name="wedding-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return handleWeddingSubmit(event)">
+  <input type="hidden" name="form-name" value="wedding-inquiry" />
+  <p style="display:none"><label>Don't fill this out: <input name="bot-field" /></label></p>
+  <div class="plan-grid">
+    <div><label>YOUR NAME</label><input name="name" placeholder="Your name"></div>
+    <div><label>EMAIL (OPTIONAL)</label><input type="email" name="email" placeholder="you@example.com"></div>
+    <div><label>PHONE</label><input name="phone" value="8707738345"></div>
+    <div><label>EVENT TYPE</label><select name="event-type">
+      <option>Wedding</option>
+      <option>Mehendi</option>
+      <option>Reception</option>
+    </select></div>
+    <div><label>EVENT DATE</label><input type="date" name="event-date"></div>
+    <div><label>EVENT LOCATION</label><input name="location" placeholder="Lucknow"></div>
+    <div><label>APPROX GUESTS</label><input type="number" name="guests" placeholder="120"></div>
+    <div><label>EMAIL</label><input name="email2" value="gunkashyap382@gmail.com"></div>
+    <textarea name="message" placeholder="Theme, drink preferences, venue..."></textarea>
+  </div>
+  <button type="submit">Verify Phone to Send Inquiry</button>
+  <p class="plan-note">By submitting, you'll be
     </section>
     <footer class="wedding-footer">
         <div>
@@ -430,6 +431,43 @@
     <script>document.querySelectorAll('.faq-question').forEach(b => b.addEventListener('click', () => b.parentElement.classList.toggle('open')))</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 <a class="floating-whatsapp" href="https://wa.me/918707738345" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+<script>
+function handleWeddingSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const fields = [...form.querySelectorAll('input[name]:not([name="bot-field"]), select[name], textarea[name]')];
+  const required = fields.filter(f => f.name !== 'email' && f.name !== 'email2');
+
+  if (!required.every(f => f.value.trim())) {
+    alert('Please complete all form fields before sending your inquiry.');
+    return false;
+  }
+
+  const formData = new FormData(form);
+
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(formData).toString()
+  })
+  .then(() => {
+    const name = form.querySelector('[name="name"]').value;
+    const eventType = form.querySelector('[name="event-type"]').value;
+    const date = form.querySelector('[name="event-date"]').value;
+    const location = form.querySelector('[name="location"]').value;
+    const guests = form.querySelector('[name="guests"]').value;
+
+    const msg = `Hi, I'd like a quote for a wedding.%0AName: ${name}%0AEvent: ${eventType}%0ADate: ${date}%0ALocation: ${location}%0AGuests: ${guests}`;
+    window.open(`https://wa.me/918707738345?text=${msg}`, '_blank');
+    form.reset();
+  })
+  .catch(() => {
+    alert('Something went wrong. Please try WhatsApp directly.');
+  });
+
+  return false;
+}
+</script>
 </body>
 
 </html>
