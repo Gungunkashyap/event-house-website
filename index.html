@@ -1,168 +1,858 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Event House - Navbar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event House - Navbar</title>
 
-<!-- Bootstrap 5 CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-<!-- Google Fonts: ek italic (Playfair Display) + ek straight (Poppins) -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts: ek italic (Playfair Display) + ek straight (Poppins) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
-<!-- Apni CSS file link karein -->
-<link rel="stylesheet" href="style.css">
+  <!-- Apni CSS file link karein -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-  <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
 
-    <!-- Logo: Event House -->
-    <a class="brand-logo" href="#">
-      <div class="brand-icon">EH</div>
-      <div class="brand-text">
-        <span class="word1">Event</span>
-        <span class="word2">HOUSE</span>
-      </div>
-    </a>
+      <!-- Logo: Event House -->
+      <a class="brand-logo" href="#">
+        <div class="brand-icon">EH</div>
+        <div class="brand-text">
+          <span class="word1">Event</span>
+          <span class="word2">HOUSE</span>
+        </div>
+      </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav mx-auto align-items-lg-center">
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto align-items-lg-center">
 
-        <li class="nav-item">
-          <a class="nav-link active-link" href="#">Home</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link active-link" href="#">Home</a>
+          </li>
 
-        <!-- Services Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-            Services
+          <!-- Services Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="weddings.html">
+                  <span class="title">Weddings</span>
+                  <span class="sub">Sangeet, Mehendi, Cocktail &amp; Reception bars</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="corporate-events.html">
+                  <span class="title">Corporate Events</span>
+                  <span class="sub">Launches, conferences &amp; awards nights</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="concerts.html">
+                  <span class="title">Concerts &amp; Festivals</span>
+                  <span class="sub">Multi-bar, high-volume service</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="house-parties.html">
+                  <span class="title">House Parties</span>
+                  <span class="sub">Intimate gatherings, home-friendly</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-4 mt-3 mt-lg-0">
+          <!-- Click to call: number dial hoga -->
+          <a href="tel:+918707738345" class="call-btn">
+            <span class="icon-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="#142433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </span>
+            <span>+91 87077 38345</span>
           </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="weddings.html">
-                <span class="title">Weddings</span>
-                <span class="sub">Sangeet, Mehendi, Cocktail &amp; Reception bars</span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="corporate-events.html">
-                <span class="title">Corporate Events</span>
-                <span class="sub">Launches, conferences &amp; awards nights</span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="concerts.html">
-                <span class="title">Concerts &amp; Festivals</span>
-                <span class="sub">Multi-bar, high-volume service</span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="house-parties.html">
-                <span class="title">House Parties</span>
-                <span class="sub">Intimate gatherings, home-friendly</span>
-              </a>
-            </li>
-          </ul>
-        </li>
 
-    
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-
-      <div class="d-flex align-items-center gap-4 mt-3 mt-lg-0">
-        <!-- Click to call: number dial hoga -->
-        <a href="tel:+918707738345" class="call-btn">
-          <span class="icon-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#142433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          <a href="contact.html" class="btn-quote">
+            Get a Quote
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
             </svg>
-          </span>
-          <span>+91 87077 38345</span>
-        </a>
-
-<a href="contact.html" class="btn-quote">
-          Get a Quote
-          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"/>
-            <polyline points="12 5 19 12 12 19"/>
-          </svg>
-        </a>
+          </a>
+        </div>
       </div>
+
     </div>
+  </nav>
 
-  </div>
-</nav>
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <p class="hero-eyebrow">PREMIUM MOBILE BARTENDING · PAN-INDIA</p>
+        <h1>Blending People.<br>Crafting Memories.</h1>
+        <p class="hero-description">Bespoke bartending experiences for weddings, corporate events,<br
+            class="desktop-break"> concerts and house parties — built around you.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="hero-btn hero-btn-primary">Get a Quote <span>→</span></a>
+          <a href="https://wa.me/918707738345" class="hero-btn hero-btn-secondary">WhatsApp Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<main>
-  <section class="hero-section">
-    <div class="hero-content">
-      <p class="hero-eyebrow">PREMIUM MOBILE BARTENDING · PAN-INDIA</p>
-      <h1>Blending People.<br>Crafting Memories.</h1>
-      <p class="hero-description">Bespoke bartending experiences for weddings, corporate events,<br class="desktop-break"> concerts and house parties — built around you.</p>
-      <div class="hero-actions">
-<a href="contact.html" class="hero-btn hero-btn-primary">Get a Quote <span>→</span></a>
-        <a href="https://wa.me/918707738345" class="hero-btn hero-btn-secondary">WhatsApp Us</a>
+  <style>
+    @keyframes floatingStrip {
+      from {
+        transform: translateX(0)
+      }
+
+      to {
+        transform: translateX(-35%)
+      }
+    }
+
+    .uploaded-section {
+      background: #f4f4f1;
+      padding: 3px 0;
+      overflow: hidden;
+      white-space: nowrap
+    }
+
+    .uploaded-section img {
+      display: block;
+      width: max-content;
+      min-width: 1700px;
+      height: 22px;
+      object-fit: cover;
+      animation: floatingStrip 22s linear infinite
+    }
+  </style>
+  <section class="why-section">
+    <div class="why-heading">
+      <p>WHY GOODTIMES &amp; CO</p>
+      <h2>The difference is in the details</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-icon">♧</div>
+        <h3>Professionally Trained Team</h3>
+        <p>Backed by <em>Cooperage The Bar School</em>, our team brings proper bar technique and event-ready discipline.
+        </p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">♜</div>
+        <h3>A Strong Sense of Flavour</h3>
+        <p>Every menu is built with balance, ingredients, and your guests' preferences in mind.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">◌</div>
+        <h3>Clear Communication</h3>
+        <p>Prompt communication, clear planning, and a team that stays aligned from start to finish.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">♡</div>
+        <h3>Hospitality-First Service</h3>
+        <p>Our people are trained to serve with warmth, polish, and attention, making guests feel looked after
+          throughout.</p>
       </div>
     </div>
   </section>
-</main>
+  <section class="uploaded-section"><img src="floating-strip.png" alt="Event locations"></section>
+  <style>
+    .hero-section h1 {
+      font-size: clamp(2.6rem, 5vw, 4.7rem);
+      line-height: 1.02;
+      letter-spacing: -1px
+    }
 
-<style>@keyframes floatingStrip{from{transform:translateX(0)}to{transform:translateX(-35%)}}.uploaded-section{background:#f4f4f1;padding:3px 0;overflow:hidden;white-space:nowrap}.uploaded-section img{display:block;width:max-content;min-width:1700px;height:22px;object-fit:cover;animation:floatingStrip 22s linear infinite}</style>
-<section class="why-section"><div class="why-heading"><p>WHY GOODTIMES &amp; CO</p><h2>The difference is in the details</h2></div><div class="why-grid"><div class="why-item"><div class="why-icon">♧</div><h3>Professionally Trained Team</h3><p>Backed by <em>Cooperage The Bar School</em>, our team brings proper bar technique and event-ready discipline.</p></div><div class="why-item"><div class="why-icon">♜</div><h3>A Strong Sense of Flavour</h3><p>Every menu is built with balance, ingredients, and your guests' preferences in mind.</p></div><div class="why-item"><div class="why-icon">◌</div><h3>Clear Communication</h3><p>Prompt communication, clear planning, and a team that stays aligned from start to finish.</p></div><div class="why-item"><div class="why-icon">♡</div><h3>Hospitality-First Service</h3><p>Our people are trained to serve with warmth, polish, and attention, making guests feel looked after throughout.</p></div></div></section>
-<section class="uploaded-section"><img src="floating-strip.png" alt="Event locations"></section>
-<style>
-  .hero-section h1{font-size:clamp(2.6rem,5vw,4.7rem);line-height:1.02;letter-spacing:-1px}
-  .section-heading h2{font-size:clamp(2.2rem,4vw,3.4rem);line-height:1.1}
-  .service-grid{max-width:960px;gap:22px}
-  .service-card img{height:240px}
-  .service-copy{padding:20px 22px 24px}
-  .service-card h3{font-size:1.55rem;margin:12px 0 8px}
-  .service-card p{font-size:.92rem;margin-bottom:12px}
-</style>
-<style>.services-section{padding:58px 6%}.section-heading{margin-bottom:34px}.section-heading h2{font-size:clamp(2rem,4vw,3rem);margin:12px 0 8px}.section-heading span{font-size:.9rem}.service-grid{max-width:960px;gap:18px}.service-card{border-radius:14px}.service-card:hover{transform:translateY(-5px);box-shadow:0 12px 24px #0005}.service-card img{height:190px}.service-copy{padding:18px 20px 21px}.service-card small{font-size:.64rem;letter-spacing:2px}.service-card h3{font-size:1.35rem;margin:11px 0 7px}.service-card p{font-size:.82rem;line-height:1.45;margin-bottom:12px}.service-card b{font-size:.82rem}@media(max-width:700px){.services-section{padding:44px 6%}.section-heading{margin-bottom:25px}.service-grid{grid-template-columns:1fr;gap:14px}.service-card img{height:150px}.service-copy{padding:16px 18px 18px}.service-card h3{font-size:1.25rem}}</style>
+    .section-heading h2 {
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      line-height: 1.1
+    }
 
-<section class="services-section" id="services">
-  <div class="section-heading"><p>WHAT WE DO</p><h2>Bars Built Around Your Event</h2><span>Multiple occasions, one uncompromising standard.</span></div>
-  <div class="service-grid">
-    <a class="service-card" href="weddings.html"><img src="hero-image-homepage.webp" alt="Wedding bartending"><div class="service-copy"><small>SANGEET · MEHENDI · COCKTAIL · RECEPTION</small><h3>Wedding Bartending</h3><p>Signature bars and polished service designed around your celebration.</p><b>Learn more →</b></div></a>
-    <a class="service-card" href="corporate-events.html"><img src="hero-image.webp" alt="Corporate event bartending"><div class="service-copy"><small>LAUNCHES · CONFERENCES · AWARDS · PARTIES</small><h3>Corporate Events</h3><p>Branded, professional bar experiences for memorable events.</p><b>Learn more →</b></div></a>
-    <a class="service-card" href="concerts.html"><img src="hero-image-homepage.webp" alt="Concert bartending"><div class="service-copy"><small>HIGH-VOLUME · MULTI-BAR · CROWD-TESTED</small><h3>Concerts &amp; Festivals</h3><p>Fast, reliable service built for high-energy crowds.</p><b>Learn more →</b></div></a>
-    <a class="service-card" href="house-parties.html"><img src="hero-image.webp" alt="House party bar"><div class="service-copy"><small>INTIMATE · HOME-FRIENDLY · PORTABLE BAR SERVICE</small><h3>House Parties</h3><p>A pop-up bar experience brought straight to your home.</p><b>Learn more →</b></div></a>
+    .service-grid {
+      max-width: 960px;
+      gap: 22px
+    }
+
+    .service-card img {
+      height: 240px
+    }
+
+    .service-copy {
+      padding: 20px 22px 24px
+    }
+
+    .service-card h3 {
+      font-size: 1.55rem;
+      margin: 12px 0 8px
+    }
+
+    .service-card p {
+      font-size: .92rem;
+      margin-bottom: 12px
+    }
+  </style>
+  <style>
+    .services-section {
+      padding: 58px 6%
+    }
+
+    .section-heading {
+      margin-bottom: 34px
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 12px 0 8px
+    }
+
+    .section-heading span {
+      font-size: .9rem
+    }
+
+    .service-grid {
+      max-width: 960px;
+      gap: 18px
+    }
+
+    .service-card {
+      border-radius: 14px
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px #0005
+    }
+
+    .service-card img {
+      height: 190px
+    }
+
+    .service-copy {
+      padding: 18px 20px 21px
+    }
+
+    .service-card small {
+      font-size: .64rem;
+      letter-spacing: 2px
+    }
+
+    .service-card h3 {
+      font-size: 1.35rem;
+      margin: 11px 0 7px
+    }
+
+    .service-card p {
+      font-size: .82rem;
+      line-height: 1.45;
+      margin-bottom: 12px
+    }
+
+    .service-card b {
+      font-size: .82rem
+    }
+
+    @media(max-width:700px) {
+      .services-section {
+        padding: 44px 6%
+      }
+
+      .section-heading {
+        margin-bottom: 25px
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+        gap: 14px
+      }
+
+      .service-card img {
+        height: 150px
+      }
+
+      .service-copy {
+        padding: 16px 18px 18px
+      }
+
+      .service-card h3 {
+        font-size: 1.25rem
+      }
+    }
+  </style>
+
+  <section class="services-section" id="services">
+    <div class="section-heading">
+      <p>WHAT WE DO</p>
+      <h2>Bars Built Around Your Event</h2><span>Multiple occasions, one uncompromising standard.</span>
+    </div>
+    <div class="service-grid">
+      <a class="service-card" href="weddings.html"><img src="hero-image-homepage.webp" alt="Wedding bartending">
+        <div class="service-copy"><small>SANGEET · MEHENDI · COCKTAIL · RECEPTION</small>
+          <h3>Wedding Bartending</h3>
+          <p>Signature bars and polished service designed around your celebration.</p><b>Learn more →</b>
+        </div>
+      </a>
+      <a class="service-card" href="corporate-events.html"><img src="hero-image.webp" alt="Corporate event bartending">
+        <div class="service-copy"><small>LAUNCHES · CONFERENCES · AWARDS · PARTIES</small>
+          <h3>Corporate Events</h3>
+          <p>Branded, professional bar experiences for memorable events.</p><b>Learn more →</b>
+        </div>
+      </a>
+      <a class="service-card" href="concerts.html"><img src="hero-image-homepage.webp" alt="Concert bartending">
+        <div class="service-copy"><small>HIGH-VOLUME · MULTI-BAR · CROWD-TESTED</small>
+          <h3>Concerts &amp; Festivals</h3>
+          <p>Fast, reliable service built for high-energy crowds.</p><b>Learn more →</b>
+        </div>
+      </a>
+      <a class="service-card" href="house-parties.html"><img src="hero-image.webp" alt="House party bar">
+        <div class="service-copy"><small>INTIMATE · HOME-FRIENDLY · PORTABLE BAR SERVICE</small>
+          <h3>House Parties</h3>
+          <p>A pop-up bar experience brought straight to your home.</p><b>Learn more →</b>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="why-section why-after-cards">
+    <div class="why-heading">
+      <p>WHY GOODTIMES &amp; CO</p>
+      <h2>The difference is in the details</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-icon">♧</div>
+        <h3>Professionally Trained Team</h3>
+        <p>Backed by <em>Cooperage The Bar School</em>, our team brings proper bar technique and event-ready discipline.
+        </p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">♜</div>
+        <h3>A Strong Sense of Flavour</h3>
+        <p>Every menu is built with balance, ingredients, and your guests' preferences in mind.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">◌</div>
+        <h3>Clear Communication</h3>
+        <p>Prompt communication, clear planning, and a team that stays aligned from start to finish.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">♡</div>
+        <h3>Hospitality-First Service</h3>
+        <p>Our people are trained to serve with warmth, polish, and attention, making guests feel looked after
+          throughout.</p>
+      </div>
+    </div>
+  </section>
+  <style>
+    .why-section {
+      background: #142b36;
+      color: #f7f2eb;
+      padding: 80px 7%
+    }
+
+    .why-heading {
+      text-align: center
+    }
+
+    .why-heading p {
+      color: #f0784d;
+      letter-spacing: 3px;
+      font-weight: 600
+    }
+
+    .why-heading h2 {
+      font: 600 clamp(2rem, 4vw, 3.4rem) 'Playfair Display', serif;
+      margin: 18px 0 60px
+    }
+
+    .why-grid {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      text-align: center
+    }
+
+    .why-icon {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 25px;
+      border-radius: 50%;
+      background: #5b3023;
+      color: #f0784d;
+      display: grid;
+      place-items: center;
+      font-size: 28px
+    }
+
+    .why-item h3 {
+      font: 600 1.35rem 'Playfair Display', serif
+    }
+
+    .why-item p {
+      color: #9bb8ca;
+      line-height: 1.55
+    }
+
+    .why-item em {
+      color: #f0784d;
+      font-style: normal
+    }
+
+    .why-section:first-of-type {
+      display: none
+    }
+
+    @media(max-width:800px) {
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media(max-width:500px) {
+      .why-grid {
+        grid-template-columns: 1fr
+      }
+
+      .why-section {
+        padding: 60px 6%
+      }
+    }
+  </style>
+  <section class="process-section">
+    <div class="process-heading">
+      <p>HOW IT WORKS</p>
+      <h2>From inquiry to last call</h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-item"><span>01</span>
+        <h3>Consult</h3>
+        <p>We listen - date, scale, vibe, budget.</p>
+      </div>
+      <div class="process-item"><span>02</span>
+        <h3>Curate</h3>
+        <p>Custom menu, package, and setup proposal.</p>
+      </div>
+      <div class="process-item"><span>03</span>
+        <h3>Setup</h3>
+        <p>Crew arrives, builds, and taste-tests on site.</p>
+      </div>
+      <div class="process-item"><span>04</span>
+        <h3>Serve</h3>
+        <p>Pour, perform, and leave a spotless space.</p>
+      </div>
+    </div>
+  </section>
+  <section class="plan-section">
+    <div class="plan-copy">
+      <p>LET'S TALK</p>
+      <h2>Ready to plan your bar?</h2><span>Tell us a little about your event and we'll come back with a tailored
+        proposal — usually within a few hours.</span>
+      <div class="plan-details"><a href="tel:+918707738345">Phone: +91 8707738345</a><a
+          href="mailto:gunkashyao382@gmail.com">Email: gunkashyao382@gmail.com</a><span>Pan-India · Based in
+          Lucknow</span></div>
+    </div>
+   <form name="plan-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return handlePlanSubmit(event)">
+  <input type="hidden" name="form-name" value="plan-inquiry" />
+  <p style="display:none"><label>Don't fill this out: <input name="bot-field" /></label></p>
+  <div class="plan-fields">
+    <input name="name" placeholder="YOUR NAME">
+    <input type="email" name="email" placeholder="EMAIL (OPTIONAL)">
+    <input name="phone" value="8707738345" placeholder="PHONE">
+    <select name="event-type">
+      <option>Select event type</option>
+      <option>Wedding</option>
+      <option>Corporate Event</option>
+      <option>House Party</option>
+    </select>
+    <input name="location" placeholder="EVENT LOCATION">
+    <input name="guests" placeholder="APPROX GUESTS">
+    <textarea name="message" placeholder="Theme, drink preferences, venue..."></textarea>
   </div>
-</section>
+  <button type="submit">Verify Phone to Send Inquiry</button>
+  <small>By submitting, you'll be redirected to WhatsApp to confirm with our team.</small>
+</form>
+  </section>
+  <style>
+    .plan-section {
+      background: #102732;
+      color: #f7f2eb;
+      padding: 70px 8%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px
+    }
 
-<section class="why-section why-after-cards"><div class="why-heading"><p>WHY GOODTIMES &amp; CO</p><h2>The difference is in the details</h2></div><div class="why-grid"><div class="why-item"><div class="why-icon">♧</div><h3>Professionally Trained Team</h3><p>Backed by <em>Cooperage The Bar School</em>, our team brings proper bar technique and event-ready discipline.</p></div><div class="why-item"><div class="why-icon">♜</div><h3>A Strong Sense of Flavour</h3><p>Every menu is built with balance, ingredients, and your guests' preferences in mind.</p></div><div class="why-item"><div class="why-icon">◌</div><h3>Clear Communication</h3><p>Prompt communication, clear planning, and a team that stays aligned from start to finish.</p></div><div class="why-item"><div class="why-icon">♡</div><h3>Hospitality-First Service</h3><p>Our people are trained to serve with warmth, polish, and attention, making guests feel looked after throughout.</p></div></div></section>
-<style>
-  .why-section{background:#142b36;color:#f7f2eb;padding:80px 7%}.why-heading{text-align:center}.why-heading p{color:#f0784d;letter-spacing:3px;font-weight:600}.why-heading h2{font:600 clamp(2rem,4vw,3.4rem) 'Playfair Display',serif;margin:18px 0 60px}.why-grid{max-width:1150px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center}.why-icon{width:70px;height:70px;margin:0 auto 25px;border-radius:50%;background:#5b3023;color:#f0784d;display:grid;place-items:center;font-size:28px}.why-item h3{font:600 1.35rem 'Playfair Display',serif}.why-item p{color:#9bb8ca;line-height:1.55}.why-item em{color:#f0784d;font-style:normal}.why-section:first-of-type{display:none}@media(max-width:800px){.why-grid{grid-template-columns:repeat(2,1fr)} }@media(max-width:500px){.why-grid{grid-template-columns:1fr}.why-section{padding:60px 6%}}
-</style>
-<section class="process-section"><div class="process-heading"><p>HOW IT WORKS</p><h2>From inquiry to last call</h2></div><div class="process-grid"><div class="process-item"><span>01</span><h3>Consult</h3><p>We listen - date, scale, vibe, budget.</p></div><div class="process-item"><span>02</span><h3>Curate</h3><p>Custom menu, package, and setup proposal.</p></div><div class="process-item"><span>03</span><h3>Setup</h3><p>Crew arrives, builds, and taste-tests on site.</p></div><div class="process-item"><span>04</span><h3>Serve</h3><p>Pour, perform, and leave a spotless space.</p></div></div></section>
-<section class="plan-section"><div class="plan-copy"><p>LET'S TALK</p><h2>Ready to plan your bar?</h2><span>Tell us a little about your event and we'll come back with a tailored proposal — usually within a few hours.</span><div class="plan-details"><a href="tel:+918707738345">Phone: +91 8707738345</a><a href="mailto:gunkashyao382@gmail.com">Email: gunkashyao382@gmail.com</a><span>Pan-India · Based in Lucknow</span></div></div><form class="plan-form"><div class="plan-fields"><input placeholder="YOUR NAME"><input type="email" placeholder="EMAIL (OPTIONAL)"><input value="8707738345" placeholder="PHONE"><select><option>Select event type</option><option>Wedding</option><option>Corporate Event</option><option>House Party</option></select><input placeholder="EVENT LOCATION"><input placeholder="APPROX GUESTS"><textarea placeholder="Theme, drink preferences, venue..."></textarea></div><button type="button">Verify Phone to Send Inquiry</button><small>By submitting, you'll be redirected to WhatsApp to confirm with our team.</small></form></section>
-<style>
-.plan-section{background:#102732;color:#f7f2eb;padding:70px 8%;display:grid;grid-template-columns:1fr 1fr;gap:70px}.plan-copy>p{color:#f0784d;letter-spacing:3px;font-weight:600}.plan-copy h2{font:600 clamp(2rem,4vw,3.5rem) 'Poppins',sans-serif;margin:18px 0}.plan-copy>span{display:block;color:#9bb8ca;line-height:1.6;max-width:560px}.plan-details{display:grid;gap:12px;margin-top:38px}.plan-details a,.plan-details span{color:#9bb8ca;text-decoration:none}.plan-form{background:#142f3c;border-radius:18px;padding:32px}.plan-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.plan-form input,.plan-form select,.plan-form textarea{width:100%;border:1px solid #294957;background:#0b1d26;color:#f7f2eb;border-radius:5px;padding:12px;font:inherit;font-size:.9rem}.plan-form textarea{grid-column:1/-1;min-height:100px}.plan-form button{width:100%;border:0;border-radius:28px;background:#f0784d;color:#fff;padding:14px;margin-top:18px;font-weight:600}.plan-form small{display:block;text-align:center;color:#9bb8ca;margin-top:14px}@media(max-width:800px){.plan-section{grid-template-columns:1fr;gap:35px;padding:55px 6%}}@media(max-width:500px){.plan-fields{grid-template-columns:1fr}.plan-form textarea{grid-column:auto}}
-</style>
-<footer class="main-footer"><div><h3>Event<br>HOUSE</h3><p>Blending people. Crafting memories.<br>Premium mobile bartending for memorable events.</p><a href="mailto:gunkashyao382@gmail.com">gunkashyao382@gmail.com</a></div><div><h4>Services</h4><a href="weddings.html">Weddings</a><a href="corporate-events.html">Corporate Events</a><a href="concerts.html">Concerts</a><a href="house-parties.html">House Parties</a></div><div><h4>Explore</h4><a href="index.html#services">Packages</a><a href="contact.html">FAQ</a><a href="contact.html">Contact</a></div><div><h4>Reach us</h4><a href="tel:+918707738345">☎ +91 8707738345</a><a href="mailto:gunkashyao382@gmail.com">✉ gunkashyao382@gmail.com</a><p>Pan-India service · Based in Lucknow</p></div></footer><div class="footer-bottom"><span>© 2026 Event House. All rights reserved.</span><span>Drink responsibly. 21+ only.</span></div>
-<style>.main-footer{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:40px;padding:55px 8%;background:#fff;color:#142433}.main-footer h3,.main-footer h4{font-family:'Playfair Display',serif;margin:0 0 14px}.main-footer h3{font-size:1.6rem}.main-footer h4{font-size:1.35rem}.main-footer p{color:#4f718c;line-height:1.55}.main-footer a{display:block;color:#4f718c;text-decoration:none;margin:8px 0}.main-footer a:hover{color:#f0784d}.footer-bottom{display:flex;justify-content:space-between;padding:20px 8%;border-top:1px solid #d6e0e6;background:#fff;color:#4f718c}@media(max-width:700px){.main-footer{grid-template-columns:1fr 1fr;padding:40px 6%}.footer-bottom{display:block;padding:18px 6%}.footer-bottom span{display:block;margin:6px 0}}
-</style>
-<script>
-  const cardImages = ['wedding-cover.webp','coporate-cover.webp','service-concerts.jpg','service-house.jpg'];
-  document.querySelectorAll('.service-card img').forEach((image, index) => image.src = cardImages[index]);
-  const address = document.querySelector('.main-footer>div:last-child p');
-  if (address) { address.style.cursor = 'pointer'; address.title = 'Open in Google Maps'; address.addEventListener('click', () => window.open('https://www.google.com/maps/search/?api=1&query=Gomti+Nagar+Lucknow', '_blank')); }
-  document.querySelectorAll('a[href^="mailto:"]').forEach(link => { link.href = 'mailto:gunkashyap382@gmail.com'; link.textContent = 'gunkashyap382@gmail.com'; });
+    .plan-copy>p {
+      color: #f0784d;
+      letter-spacing: 3px;
+      font-weight: 600
+    }
+
+    .plan-copy h2 {
+      font: 600 clamp(2rem, 4vw, 3.5rem) 'Poppins', sans-serif;
+      margin: 18px 0
+    }
+
+    .plan-copy>span {
+      display: block;
+      color: #9bb8ca;
+      line-height: 1.6;
+      max-width: 560px
+    }
+
+    .plan-details {
+      display: grid;
+      gap: 12px;
+      margin-top: 38px
+    }
+
+    .plan-details a,
+    .plan-details span {
+      color: #9bb8ca;
+      text-decoration: none
+    }
+
+    .plan-form {
+      background: #142f3c;
+      border-radius: 18px;
+      padding: 32px
+    }
+
+    .plan-fields {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px
+    }
+
+    .plan-form input,
+    .plan-form select,
+    .plan-form textarea {
+      width: 100%;
+      border: 1px solid #294957;
+      background: #0b1d26;
+      color: #f7f2eb;
+      border-radius: 5px;
+      padding: 12px;
+      font: inherit;
+      font-size: .9rem
+    }
+
+    .plan-form textarea {
+      grid-column: 1/-1;
+      min-height: 100px
+    }
+
+    .plan-form button {
+      width: 100%;
+      border: 0;
+      border-radius: 28px;
+      background: #f0784d;
+      color: #fff;
+      padding: 14px;
+      margin-top: 18px;
+      font-weight: 600
+    }
+
+    .plan-form small {
+      display: block;
+      text-align: center;
+      color: #9bb8ca;
+      margin-top: 14px
+    }
+
+    @media(max-width:800px) {
+      .plan-section {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 55px 6%
+      }
+    }
+
+    @media(max-width:500px) {
+      .plan-fields {
+        grid-template-columns: 1fr
+      }
+
+      .plan-form textarea {
+        grid-column: auto
+      }
+    }
+  </style>
+  <footer class="main-footer">
+    <div>
+      <h3>Event<br>HOUSE</h3>
+      <p>Blending people. Crafting memories.<br>Premium mobile bartending for memorable events.</p><a
+        href="mailto:gunkashyao382@gmail.com">gunkashyao382@gmail.com</a>
+    </div>
+    <div>
+      <h4>Services</h4><a href="weddings.html">Weddings</a><a href="corporate-events.html">Corporate Events</a><a
+        href="concerts.html">Concerts</a><a href="house-parties.html">House Parties</a>
+    </div>
+    <div>
+      <h4>Explore</h4><a href="index.html#services">Packages</a><a href="contact.html">FAQ</a><a
+        href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h4>Reach us</h4><a href="tel:+918707738345">☎ +91 8707738345</a><a href="mailto:gunkashyao382@gmail.com">✉
+        gunkashyao382@gmail.com</a>
+      <p>Pan-India service · Based in Lucknow</p>
+    </div>
+  </footer>
+  <div class="footer-bottom"><span>© 2026 Event House. All rights reserved.</span><span>Drink responsibly. 21+
+      only.</span></div>
+  <style>
+    .main-footer {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      padding: 55px 8%;
+      background: #fff;
+      color: #142433
+    }
+
+    .main-footer h3,
+    .main-footer h4 {
+      font-family: 'Playfair Display', serif;
+      margin: 0 0 14px
+    }
+
+    .main-footer h3 {
+      font-size: 1.6rem
+    }
+
+    .main-footer h4 {
+      font-size: 1.35rem
+    }
+
+    .main-footer p {
+      color: #4f718c;
+      line-height: 1.55
+    }
+
+    .main-footer a {
+      display: block;
+      color: #4f718c;
+      text-decoration: none;
+      margin: 8px 0
+    }
+
+    .main-footer a:hover {
+      color: #f0784d
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 8%;
+      border-top: 1px solid #d6e0e6;
+      background: #fff;
+      color: #4f718c
+    }
+
+    @media(max-width:700px) {
+      .main-footer {
+        grid-template-columns: 1fr 1fr;
+        padding: 40px 6%
+      }
+
+      .footer-bottom {
+        display: block;
+        padding: 18px 6%
+      }
+
+      .footer-bottom span {
+        display: block;
+        margin: 6px 0
+      }
+    }
+  </style>
+  <script>
+    const cardImages = ['wedding-cover.webp', 'coporate-cover.webp', 'service-concerts.jpg', 'service-house.jpg'];
+    document.querySelectorAll('.service-card img').forEach((image, index) => image.src = cardImages[index]);
+    const address = document.querySelector('.main-footer>div:last-child p');
+    if (address) { address.style.cursor = 'pointer'; address.title = 'Open in Google Maps'; address.addEventListener('click', () => window.open('https://www.google.com/maps/search/?api=1&query=Gomti+Nagar+Lucknow', '_blank')); }
+    document.querySelectorAll('a[href^="mailto:"]').forEach(link => { link.href = 'mailto:gunkashyap382@gmail.com'; link.textContent = 'gunkashyap382@gmail.com'; });
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+  <a class="floating-whatsapp" href="https://wa.me/918707738345" target="_blank" rel="noopener"
+    aria-label="Chat with us on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+  <style>
+    .why-after-cards {
+      padding: 38px 6% !important
+    }
+
+    .why-after-cards .why-heading {
+      margin-bottom: 28px
+    }
+
+    .why-after-cards .why-heading h2 {
+      font-size: clamp(1.8rem, 3vw, 2.5rem) !important
+    }
+
+    .why-after-cards .why-grid {
+      max-width: 960px;
+      gap: 16px
+    }
+
+    .why-after-cards .why-item {
+      padding: 18px
+    }
+
+    .why-after-cards .why-item h3 {
+      font-size: .98rem !important;
+      margin: 10px 0 6px
+    }
+
+    .why-after-cards .why-item p {
+      font-size: .8rem !important;
+      line-height: 1.45
+    }
+
+    .why-after-cards .why-icon {
+      font-size: 1.5rem
+    }
+
+    @media(max-width:700px) {
+      .why-after-cards {
+        padding: 30px 6% !important
+      }
+
+      .why-after-cards .why-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px
+      }
+    }
+
+    @media(max-width:480px) {
+      .why-after-cards .why-grid {
+        grid-template-columns: 1fr
+      }
+    }
+  </style>
+  <style>
+    .process-section {
+      padding: 42px 6% !important
+    }
+
+    .process-heading h2 {
+      font-size: clamp(1.7rem, 3vw, 2.4rem) !important;
+      margin: 10px 0 32px !important
+    }
+
+    .process-heading p {
+      font-size: .72rem !important;
+      letter-spacing: 2.5px
+    }
+
+    .process-grid {
+      max-width: 980px;
+      gap: 18px
+    }
+
+    .process-item {
+      padding: 18px 16px;
+      border-top-width: 1px
+    }
+
+    .process-item span {
+      font-size: 1.35rem
+    }
+
+    .process-item h3 {
+      font-size: .95rem;
+      margin: 8px 0 5px
+    }
+
+    .process-item p {
+      font-size: .78rem;
+      line-height: 1.4
+    }
+
+    @media(max-width:800px) {
+      .process-section {
+        padding: 36px 6% !important
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px
+      }
+    }
+
+    @media(max-width:480px) {
+      .process-grid {
+        grid-template-columns: 1fr
+      }
+
+      .process-item {
+        padding: 15px 14px
+      }
+    }
+  </style>
+  <script>
+function handlePlanSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const fields = [...form.querySelectorAll('input[name]:not([name="bot-field"]), select[name], textarea[name]')];
+  const required = fields.filter(f => f.name !== 'email');
+
+  if (!required.every(f => f.value.trim())) {
+    alert('Please complete all form fields before sending your inquiry.');
+    return false;
+  }
+
+  const formData = new FormData(form);
+
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(formData).toString()
+  })
+  .then(() => {
+    const name = form.querySelector('[name="name"]').value;
+    const eventType = form.querySelector('[name="event-type"]').value;
+    const location = form.querySelector('[name="location"]').value;
+    const guests = form.querySelector('[name="guests"]').value;
+
+    const msg = `Hi, I'd like a quote.%0AName: ${name}%0AEvent: ${eventType}%0ALocation: ${location}%0AGuests: ${guests}`;
+    window.open(`https://wa.me/918707738345?text=${msg}`, '_blank');
+    form.reset();
+  })
+  .catch(() => {
+    alert('Something went wrong. Please try WhatsApp directly.');
+  });
+
+  return false;
+}
 </script>
-
-<!-- Bootstrap JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-
-<a class="floating-whatsapp" href="https://wa.me/918707738345" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><i class="bi bi-whatsapp"></i></a>
-<style>.why-after-cards{padding:38px 6%!important}.why-after-cards .why-heading{margin-bottom:28px}.why-after-cards .why-heading h2{font-size:clamp(1.8rem,3vw,2.5rem)!important}.why-after-cards .why-grid{max-width:960px;gap:16px}.why-after-cards .why-item{padding:18px}.why-after-cards .why-item h3{font-size:.98rem!important;margin:10px 0 6px}.why-after-cards .why-item p{font-size:.8rem!important;line-height:1.45}.why-after-cards .why-icon{font-size:1.5rem}@media(max-width:700px){.why-after-cards{padding:30px 6%!important}.why-after-cards .why-grid{grid-template-columns:1fr 1fr;gap:12px}}@media(max-width:480px){.why-after-cards .why-grid{grid-template-columns:1fr}}</style>
-<style>.process-section{padding:42px 6%!important}.process-heading h2{font-size:clamp(1.7rem,3vw,2.4rem)!important;margin:10px 0 32px!important}.process-heading p{font-size:.72rem!important;letter-spacing:2.5px}.process-grid{max-width:980px;gap:18px}.process-item{padding:18px 16px;border-top-width:1px}.process-item span{font-size:1.35rem}.process-item h3{font-size:.95rem;margin:8px 0 5px}.process-item p{font-size:.78rem;line-height:1.4}@media(max-width:800px){.process-section{padding:36px 6%!important}.process-grid{grid-template-columns:repeat(2,1fr);gap:14px}}@media(max-width:480px){.process-grid{grid-template-columns:1fr}.process-item{padding:15px 14px}}</style>
 </body>
+
 </html>
