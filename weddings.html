@@ -300,6 +300,23 @@
             .wedding-bottom { display: block; }
         }
     </style>
+<style>
+  .plan-section{padding:56px 7%;background:#102732;color:#f7f2eb}
+  .plan-section>.plan-heading{max-width:880px;margin:0 auto 24px;text-align:center}
+  .plan-section>.plan-heading h2{margin:8px 0 10px;line-height:1.15}
+  .plan-section>form{width:min(100%,880px);margin:0 auto;padding:26px;background:#f7f6f3;border-radius:14px;box-sizing:border-box;color:#142433}
+  .plan-section .plan-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 18px}
+  .plan-section .plan-grid>div{min-width:0}
+  .plan-section .plan-grid label{display:block;margin:0 0 6px;color:#4f718c;font:600 .7rem Poppins,sans-serif;letter-spacing:.8px}
+  .plan-section .plan-grid input,.plan-section .plan-grid select,.plan-section .plan-grid textarea{display:block;width:100%;box-sizing:border-box;padding:11px 12px;border:1px solid #d1dce3;border-radius:6px;background:#fff;color:#142433;font:400 .84rem Poppins,sans-serif}
+  .plan-section .plan-grid input:focus,.plan-section .plan-grid select:focus,.plan-section .plan-grid textarea:focus{border-color:#f0784d;outline:2px solid #f0784d33}
+  .plan-section .plan-grid textarea{grid-column:1/-1;min-height:92px;resize:vertical}
+  .plan-section>form>button{display:block;width:100%;margin-top:16px;padding:13px 18px;border:0;border-radius:28px;background:#f0784d;color:#fff;font:600 .86rem Poppins,sans-serif;cursor:pointer;transition:background .2s,transform .2s}
+  .plan-section>form>button:hover{background:#d9672c;transform:translateY(-1px)}
+  .plan-section .plan-note{margin:11px 0 0;text-align:center;color:#4f718c;font:.72rem/1.45 Poppins,sans-serif}
+  @media(max-width:700px){.plan-section{padding:42px 6%}.plan-section>form{padding:20px}.plan-section .plan-grid{grid-template-columns:1fr;gap:12px}.plan-section .plan-grid textarea{grid-column:auto}.plan-section>.plan-heading h2{font-size:2rem}}
+  @media(max-width:420px){.plan-section{padding:34px 5%}.plan-section>form{padding:16px;border-radius:11px}.plan-section>.plan-heading h2{font-size:1.75rem}.plan-section .plan-grid input,.plan-section .plan-grid select,.plan-section .plan-grid textarea{font-size:.8rem;padding:10px}.plan-section>form>button{font-size:.8rem;padding:12px}}
+</style>
 </head>
 
 <body>

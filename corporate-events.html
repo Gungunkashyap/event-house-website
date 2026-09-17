@@ -243,18 +243,24 @@
             <h2>Plan your corporate event bar</h2>
             <p>Share a few details 
                 respond within hours.</p>
-            <form class="form" onsubmit="event.preventDefault(); const fields=[...this.querySelectorAll('input,select,textarea')]; if(fields.every(field=>field.value.trim())) window.open('https://wa.me/918707738345','_blank'); else alert('Please complete all form fields before sending your inquiry.');"><label>Your name<input placeholder="Your name" required></label><label>Email<input type="email"
-                        placeholder="you@example.com" required></label><label>Phone<input value="8707738345" required></label><label>Event
-                    type<select required>
-                        <option value="" selected disabled>Select event type</option>
-                        <option>Boardroom Classics</option>
-                        <option>Launch Specials</option>
-                        <option>Mocktail Menu</option>
-                    </select></label><label>Event date<input type="date" required></label><label>Event location<input
-                        placeholder="Lucknow"></label><label>Approx guests<input placeholder="120"></label><label>Tell
-                    us more<textarea placeholder="Theme, drink preferences, venue..."></textarea></label><button
-                    type="submit">Verify Phone to Send Inquiry</button><small>By submitting, you'll be redirected to WhatsApp to confirm with our
-                    team.</small></form>
+<form name="corporate-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return handleCorporateSubmit(event)">
+  <input type="hidden" name="form-name" value="corporate-inquiry" />
+  <p style="display:none"><label>Don't fill this out: <input name="bot-field" /></label></p>
+  <label>Your name<input name="name" placeholder="Your name" required></label>
+  <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+  <label>Phone<input name="phone" value="8707738345" required></label>
+  <label>Event type<select name="event-type" required>
+    <option value="" selected disabled>Select event type</option>
+    <option>Boardroom Classics</option>
+    <option>Launch Specials</option>
+    <option>Mocktail Menu</option>
+  </select></label>
+  <label>Event date<input type="date" name="event-date" required></label>
+  <label>Event location<input name="location" placeholder="Lucknow"></label>
+  <label>Approx guests<input name="guests" placeholder="120"></label>
+  <label>Tell us more<textarea name="message" placeholder="Theme, drink preferences, venue..."></textarea></label>
+  <button type="submit">Verify Phone to Send Inquiry</button>
+  <small>By submitting, you'll be redirected to WhatsApp to confirm with our
         </section>
     </main>
     <footer>

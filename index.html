@@ -476,22 +476,23 @@
           href="mailto:gunkashyao382@gmail.com">Email: gunkashyao382@gmail.com</a><span>Pan-India · Based in
           Lucknow</span></div>
     </div>
-   <form name="plan-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return handlePlanSubmit(event)">
+   <form class="plan-form" name="plan-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return handlePlanSubmit(event)">
   <input type="hidden" name="form-name" value="plan-inquiry" />
   <p style="display:none"><label>Don't fill this out: <input name="bot-field" /></label></p>
   <div class="plan-fields">
-    <input name="name" placeholder="YOUR NAME">
-    <input type="email" name="email" placeholder="EMAIL (OPTIONAL)">
-    <input name="phone" value="8707738345" placeholder="PHONE">
-    <select name="event-type">
-      <option>Select event type</option>
+    <label>Your name<input name="name" placeholder="Aarav Sharma" required></label>
+    <label>Email (optional)<input type="email" name="email" placeholder="you@example.com"></label>
+    <label class="phone-field">Phone<div class="phone-row"><span>+91</span><input name="phone" value="8707738345" placeholder="9876543210" required></div></label>
+    <label>Event type<select name="event-type" required>
+      <option value="">Select event type</option>
       <option>Wedding</option>
       <option>Corporate Event</option>
       <option>House Party</option>
-    </select>
-    <input name="location" placeholder="EVENT LOCATION">
-    <input name="guests" placeholder="APPROX GUESTS">
-    <textarea name="message" placeholder="Theme, drink preferences, venue..."></textarea>
+    </select></label>
+    <label>Event date<input type="date" name="event-date" required></label>
+    <label>Event location<input name="location" placeholder="Mumbai" required></label>
+    <label>Approx guests<input name="guests" type="number" min="1" placeholder="120" required></label>
+    <label class="form-wide">Tell us more (optional)<textarea name="message" placeholder="Theme, drink preferences, venue..."></textarea></label>
   </div>
   <button type="submit">Verify Phone to Send Inquiry</button>
   <small>By submitting, you'll be redirected to WhatsApp to confirm with our team.</small>
@@ -853,6 +854,13 @@ function handlePlanSubmit(e) {
   return false;
 }
 </script>
+<style>.plan-section .plan-form{display:block;background:#102b37!important;color:#f7f2eb;box-sizing:border-box}.plan-section .plan-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 20px}.plan-section .plan-fields label{display:grid;gap:7px;color:#9bb8ca;font-size:.72rem;letter-spacing:.7px;text-transform:uppercase}.plan-section .plan-fields input,.plan-section .plan-fields select,.plan-section .plan-fields textarea{display:block;width:100%;box-sizing:border-box;border:1px solid #294957;background:#0b1d26;color:#f7f2eb;border-radius:5px;padding:11px;font:400 .84rem Poppins,sans-serif}.plan-section .plan-fields input::placeholder,.plan-section .plan-fields textarea::placeholder{color:#8ba9bc}.plan-section .plan-fields select{color:#f7f2eb}.plan-section .plan-fields textarea{min-height:82px;resize:vertical}.plan-section .form-wide{grid-column:1/-1}.phone-row{display:grid;grid-template-columns:62px 1fr 126px;gap:10px}.phone-row>span{display:grid;place-items:center;background:#173541;border:1px solid #294957;border-radius:5px;color:#f7f2eb}.phone-row input{min-width:0}.otp-btn{border:1px solid #294957;border-radius:5px;background:#0b1d26;color:#f7f2eb;font:600 .78rem Poppins,sans-serif;cursor:pointer}.plan-section .plan-form button[type=submit]{display:block;width:100%;box-sizing:border-box;border:0;border-radius:28px;background:#f0784d;color:#fff;padding:13px;margin-top:18px;font:600 .9rem Poppins,sans-serif;cursor:pointer}.plan-section .plan-form button[type=submit]:hover{background:#d9672c;transform:translateY(-1px)}@media(max-width:520px){.plan-section .plan-fields{grid-template-columns:1fr}.plan-section .form-wide{grid-column:auto}.phone-row{grid-template-columns:52px 1fr}.otp-btn{grid-column:1/-1;padding:10px}}</style>
 </body>
 
+<style>
+  .plan-section .phone-row{grid-template-columns:52px minmax(0,1fr);gap:8px;align-items:stretch}
+  .plan-section .phone-row input{width:100%!important;min-width:0}
+  @media(max-width:800px){.plan-section{grid-template-columns:1fr;gap:32px;padding:52px 6%}.plan-copy h2{font-size:clamp(2rem,7vw,3rem)}.plan-form{max-width:680px;width:100%;margin:auto}}
+  @media(max-width:560px){.plan-section{padding:38px 5%;gap:24px}.plan-form{padding:16px!important;border-radius:12px}.plan-section .plan-fields{grid-template-columns:1fr;gap:12px}.plan-section .form-wide{grid-column:auto}.plan-section .phone-row{grid-template-columns:48px minmax(0,1fr);gap:8px}.plan-section .plan-form button[type=submit]{margin-top:14px;padding:14px 12px;font-size:.84rem;line-height:1.25}.plan-section .plan-form small{display:block;line-height:1.45;padding:0 8px}}
+</style>
 </html>
